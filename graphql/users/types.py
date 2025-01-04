@@ -1,4 +1,3 @@
-# types.py
 from typing import Optional, List
 from strawberry import auto
 import strawberry_django

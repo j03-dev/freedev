@@ -1,9 +1,17 @@
-# schema.py
 import strawberry
 import strawberry_django
 from strawberry_django import auth, mutations
 from strawberry.file_uploads import Upload
+from strawberry_django.utils.requests import get_request
 from strawberry_django.optimizer import DjangoOptimizerExtension
+
+try:
+    from channels import auth as channels_auth
+except ModuleNotFoundError:
+    channels_auth = None
+
+from django.core.exceptions import ValidationError
+
 from users import models
 from users.types import (
     User,
@@ -15,10 +23,7 @@ from users.types import (
 
 @strawberry.type
 class Query:
-    user: User = strawberry_django.field()
-    users: list[User] = strawberry_django.field()
-    user_image: UserImage = strawberry_django.field()
-    user_images: list[UserImage] = strawberry_django.field()
+    me: User = strawberry_django.auth.current_user()
 
 
 @strawberry.type
@@ -27,6 +32,25 @@ class Mutation:
     register: User = auth.register(UserInput)
     update_user: User = mutations.update(UserPartialInput)
     delete_user: User = mutations.delete()
+
+    @strawberry.mutation
+    def login(self, info, email: str, password: str) -> User:
+        request = get_request(info)
+        user = auth.authenticate(request, email=email, password=password)
+
+        if user is None:
+            raise ValidationError("Incorret email/password")
+
+        try:
+            auth.login(request, user)
+        except AttributeError:
+            try:
+                scope = request.consumer.scope  # type: ignore
+                async_to_sync(channels_auth.login)(scope, user)  # type: ignore
+                scope["session"].save()
+            except (AttributeError, NameError):
+                pass
+        return user
 
     # User image mutations
     @strawberry.mutation
