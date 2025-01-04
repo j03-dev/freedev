@@ -43,15 +43,7 @@ pip install -r requirements.txt
 Set up the database by applying migrations.
 
 ```bash
-python manage.py migrate
-```
-
-### 5. Create a Superuser (Optional)
-
-To access the Django admin interface, create a superuser account.
-
-```bash
-python manage.py createsuperuser
+python graphql/manage.py migrate
 ```
 
 ### 6. Run the Development Server
@@ -59,7 +51,7 @@ python manage.py createsuperuser
 Start the server to see the application in action.
 
 ```bash
-python manage.py runserver
+python graphql/manage.py runserver
 ```
 
 Access the application at `http://localhost:8000/`.
