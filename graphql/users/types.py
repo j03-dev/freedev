@@ -49,7 +49,7 @@ class UserImage:
     created_at: auto
 
     @strawberry_django.field
-    def image_url(self) -> str:
+    def image_url(self) -> Optional[str]:
         return self.image.url if self.image else None
 
 
