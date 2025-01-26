@@ -16,7 +16,7 @@ class User(AbstractUser):
     )
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["username"]
+    REQUIRED_FIELDS = []
 
     def set_active_image(self, image):
         if image in self.user_images.all():
