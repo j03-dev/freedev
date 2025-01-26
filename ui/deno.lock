@@ -12,6 +12,7 @@
     "npm:@angular/platform-browser-dynamic@17": "17.3.12_@angular+common@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_@angular+compiler@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_@angular+core@17.3.12__rxjs@7.8.1__zone.js@0.14.10_@angular+platform-browser@17.3.12__@angular+animations@17.3.12___@angular+core@17.3.12____rxjs@7.8.1____zone.js@0.14.10___rxjs@7.8.1___zone.js@0.14.10__@angular+common@17.3.12___@angular+core@17.3.12____rxjs@7.8.1____zone.js@0.14.10___rxjs@7.8.1___zone.js@0.14.10__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_rxjs@7.8.1_zone.js@0.14.10_@angular+animations@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10",
     "npm:@angular/platform-browser@17": "17.3.12_@angular+animations@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_@angular+common@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_@angular+core@17.3.12__rxjs@7.8.1__zone.js@0.14.10_rxjs@7.8.1_zone.js@0.14.10",
     "npm:@angular/router@17": "17.3.12_@angular+common@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_@angular+core@17.3.12__rxjs@7.8.1__zone.js@0.14.10_@angular+platform-browser@17.3.12__@angular+animations@17.3.12___@angular+core@17.3.12____rxjs@7.8.1____zone.js@0.14.10___rxjs@7.8.1___zone.js@0.14.10__@angular+common@17.3.12___@angular+core@17.3.12____rxjs@7.8.1____zone.js@0.14.10___rxjs@7.8.1___zone.js@0.14.10__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10_rxjs@7.8.1_zone.js@0.14.10_@angular+animations@17.3.12__@angular+core@17.3.12___rxjs@7.8.1___zone.js@0.14.10__rxjs@7.8.1__zone.js@0.14.10",
+    "npm:@tailwindcss/postcss@4": "4.0.0",
     "npm:@tauri-apps/api@2": "2.2.0",
     "npm:@tauri-apps/cli@2": "2.2.7",
     "npm:@tauri-apps/plugin-opener@2": "2.2.5",
@@ -22,12 +23,17 @@
     "npm:karma-jasmine-html-reporter@2.1": "2.1.0_jasmine-core@5.1.2_karma@6.4.4_karma-jasmine@5.1.0__karma@6.4.4",
     "npm:karma-jasmine@5.1": "5.1.0_karma@6.4.4",
     "npm:karma@6.4": "6.4.4",
+    "npm:postcss@^8.5.1": "8.5.1",
     "npm:rxjs@7.8": "7.8.1",
+    "npm:tailwindcss@4": "4.0.0",
     "npm:tslib@^2.3.0": "2.8.1",
     "npm:typescript@5.4": "5.4.5",
     "npm:zone.js@~0.14.2": "0.14.10"
   },
   "npm": {
+    "@alloc/quick-lru@5.2.0": {
+      "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="
+    },
     "@ampproject/remapping@2.3.0": {
       "integrity": "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==",
       "dependencies": [
@@ -91,7 +97,7 @@
         "parse5-html-rewriting-stream",
         "picomatch@4.0.1",
         "piscina",
-        "postcss",
+        "postcss@8.4.35",
         "postcss-loader",
         "resolve-url-loader",
         "rxjs",
@@ -1577,6 +1583,74 @@
     "@socket.io/component-emitter@3.1.2": {
       "integrity": "sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA=="
     },
+    "@tailwindcss/node@4.0.0": {
+      "integrity": "sha512-tfG2uBvo6j6kDIPmntxwXggCOZAt7SkpAXJ6pTIYirNdk5FBqh/CZZ9BZPpgcl/tNFLs6zc4yghM76sqiELG9g==",
+      "dependencies": [
+        "enhanced-resolve",
+        "jiti@2.4.2",
+        "tailwindcss"
+      ]
+    },
+    "@tailwindcss/oxide-android-arm64@4.0.0": {
+      "integrity": "sha512-EAhjU0+FIdyGPR+7MbBWubLLPtmOu+p7c2egTTFBRk/n//zYjNvVK0WhcBK5Y7oUB5mo4EjA2mCbY7dcEMWSRw=="
+    },
+    "@tailwindcss/oxide-darwin-arm64@4.0.0": {
+      "integrity": "sha512-hdz4xnSWS11cIp+7ye+3dGHqs0X33z+BXXTtgPOguDWVa+TdXUzwxonklSzf5wlJFuot3dv5eWzhlNai0oYYQg=="
+    },
+    "@tailwindcss/oxide-darwin-x64@4.0.0": {
+      "integrity": "sha512-+dOUUaXTkPKKhtUI9QtVaYg+MpmLh2CN0dHohiYXaBirEyPMkjaT0zbRgzQlNnQWjCVVXPQluIEb0OMEjSTH+Q=="
+    },
+    "@tailwindcss/oxide-freebsd-x64@4.0.0": {
+      "integrity": "sha512-CJhGDhxnrmu4SwyC62fA+wP24MhA/TZlIhRHqg1kRuIHoGoVR2uSSm1qxTxU37tSSZj8Up0q6jsBJCAP4k7rgQ=="
+    },
+    "@tailwindcss/oxide-linux-arm-gnueabihf@4.0.0": {
+      "integrity": "sha512-Wy7Av0xzXfY2ujZBcYy4+7GQm25/J1iHvlQU2CfwdDCuPWfIjYzR6kggz+uVdSJyKV2s64znchBxRE8kV4uXSA=="
+    },
+    "@tailwindcss/oxide-linux-arm64-gnu@4.0.0": {
+      "integrity": "sha512-srwBo2l6pvM0swBntc1ucuhGsfFOLkqPRFQ3dWARRTfSkL1U9nAsob2MKc/n47Eva/W9pZZgMOuf7rDw8pK1Ew=="
+    },
+    "@tailwindcss/oxide-linux-arm64-musl@4.0.0": {
+      "integrity": "sha512-abhusswkduYWuezkBmgo0K0/erGq3M4Se5xP0fhc/0dKs0X/rJUYYCFWntHb3IGh3aVzdQ0SXJs93P76DbUqtw=="
+    },
+    "@tailwindcss/oxide-linux-x64-gnu@4.0.0": {
+      "integrity": "sha512-hGtRYIUEx377/HlU49+jvVKKwU1MDSKYSMMs0JFO2Wp7LGxk5+0j5+RBk9NFnmp/lbp32yPTgIOO5m1BmDq36A=="
+    },
+    "@tailwindcss/oxide-linux-x64-musl@4.0.0": {
+      "integrity": "sha512-7xgQgSAThs0I14VAgmxpJnK6XFSZBxHMGoDXkLyYkEnu+8WRQMbCP93dkCUn2PIv+Q+JulRgc00PJ09uORSLXQ=="
+    },
+    "@tailwindcss/oxide-win32-arm64-msvc@4.0.0": {
+      "integrity": "sha512-qEcgTIPcWY5ZE7f6VxQ/JPrSFMcehzVIlZj7sGE3mVd5YWreAT+Fl1vSP8q2pjnWXn0avZG3Iw7a2hJQAm+fTQ=="
+    },
+    "@tailwindcss/oxide-win32-x64-msvc@4.0.0": {
+      "integrity": "sha512-bqT0AY8RXb8GMDy28JtngvqaOSB2YixbLPLvUo6I6lkvvUwA6Eqh2Tj60e2Lh7O/k083f8tYiB0WEK4wmTI7Jg=="
+    },
+    "@tailwindcss/oxide@4.0.0": {
+      "integrity": "sha512-W3FjpJgy4VV1JiL7iBYDf2n/WkeDg1Il+0Q7eWnqPyvkPPCo/Mbwc5BiaT7dfBNV6tQKAhVE34rU5xl8pSl50w==",
+      "dependencies": [
+        "@tailwindcss/oxide-android-arm64",
+        "@tailwindcss/oxide-darwin-arm64",
+        "@tailwindcss/oxide-darwin-x64",
+        "@tailwindcss/oxide-freebsd-x64",
+        "@tailwindcss/oxide-linux-arm-gnueabihf",
+        "@tailwindcss/oxide-linux-arm64-gnu",
+        "@tailwindcss/oxide-linux-arm64-musl",
+        "@tailwindcss/oxide-linux-x64-gnu",
+        "@tailwindcss/oxide-linux-x64-musl",
+        "@tailwindcss/oxide-win32-arm64-msvc",
+        "@tailwindcss/oxide-win32-x64-msvc"
+      ]
+    },
+    "@tailwindcss/postcss@4.0.0": {
+      "integrity": "sha512-lI2bPk4TvwavHdehjr5WiC6HnZ59hacM6ySEo4RM/H7tsjWd8JpqiNW9ThH7rO/yKtrn4mGBoXshpvn8clXjPg==",
+      "dependencies": [
+        "@alloc/quick-lru",
+        "@tailwindcss/node",
+        "@tailwindcss/oxide",
+        "lightningcss",
+        "postcss@8.5.1",
+        "tailwindcss"
+      ]
+    },
     "@tauri-apps/api@2.2.0": {
       "integrity": "sha512-R8epOeZl1eJEl603aUMIGb4RXlhPjpgxbGVEaqY+0G5JG9vzV/clNlzTeqc+NLYXVqXcn8mb4c5b9pJIUDEyAg=="
     },
@@ -2018,7 +2092,7 @@
         "fraction.js",
         "normalize-range",
         "picocolors",
-        "postcss",
+        "postcss@8.4.35",
         "postcss-value-parser"
       ]
     },
@@ -2409,7 +2483,7 @@
         "dom-serializer",
         "domhandler",
         "htmlparser2",
-        "postcss",
+        "postcss@8.4.35",
         "postcss-media-query-parser"
       ]
     },
@@ -2425,7 +2499,7 @@
       "integrity": "sha512-LTSA/jWbwdMlk+rhmElbDR2vbtQoTBPr7fkJE+mxrHj+7ru0hUmHafDRzWIjIHTwpitWVaqY2/UWGRca3yUgRw==",
       "dependencies": [
         "icss-utils",
-        "postcss",
+        "postcss@8.4.35",
         "postcss-modules-extract-imports",
         "postcss-modules-local-by-default",
         "postcss-modules-scope",
@@ -2506,6 +2580,9 @@
     },
     "destroy@1.2.0": {
       "integrity": "sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg=="
+    },
+    "detect-libc@1.0.3": {
+      "integrity": "sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg=="
     },
     "detect-node@2.1.0": {
       "integrity": "sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g=="
@@ -3200,7 +3277,7 @@
     "icss-utils@5.1.0_postcss@8.4.35": {
       "integrity": "sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==",
       "dependencies": [
-        "postcss"
+        "postcss@8.4.35"
       ]
     },
     "ieee754@1.2.1": {
@@ -3433,6 +3510,9 @@
     "jiti@1.21.7": {
       "integrity": "sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A=="
     },
+    "jiti@2.4.2": {
+      "integrity": "sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A=="
+    },
     "js-tokens@4.0.0": {
       "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
     },
@@ -3595,6 +3675,52 @@
       "integrity": "sha512-771TFWFD70G1wLTC4oU2Cw4qvtmNrIw+wRvBtn+okgHl7slJVi7zfNcdmqDL72BojM30VNJ2UHylr1o77U37Jw==",
       "dependencies": [
         "webpack-sources"
+      ]
+    },
+    "lightningcss-darwin-arm64@1.29.1": {
+      "integrity": "sha512-HtR5XJ5A0lvCqYAoSv2QdZZyoHNttBpa5EP9aNuzBQeKGfbyH5+UipLWvVzpP4Uml5ej4BYs5I9Lco9u1fECqw=="
+    },
+    "lightningcss-darwin-x64@1.29.1": {
+      "integrity": "sha512-k33G9IzKUpHy/J/3+9MCO4e+PzaFblsgBjSGlpAaFikeBFm8B/CkO3cKU9oI4g+fjS2KlkLM/Bza9K/aw8wsNA=="
+    },
+    "lightningcss-freebsd-x64@1.29.1": {
+      "integrity": "sha512-0SUW22fv/8kln2LnIdOCmSuXnxgxVC276W5KLTwoehiO0hxkacBxjHOL5EtHD8BAXg2BvuhsJPmVMasvby3LiQ=="
+    },
+    "lightningcss-linux-arm-gnueabihf@1.29.1": {
+      "integrity": "sha512-sD32pFvlR0kDlqsOZmYqH/68SqUMPNj+0pucGxToXZi4XZgZmqeX/NkxNKCPsswAXU3UeYgDSpGhu05eAufjDg=="
+    },
+    "lightningcss-linux-arm64-gnu@1.29.1": {
+      "integrity": "sha512-0+vClRIZ6mmJl/dxGuRsE197o1HDEeeRk6nzycSy2GofC2JsY4ifCRnvUWf/CUBQmlrvMzt6SMQNMSEu22csWQ=="
+    },
+    "lightningcss-linux-arm64-musl@1.29.1": {
+      "integrity": "sha512-UKMFrG4rL/uHNgelBsDwJcBqVpzNJbzsKkbI3Ja5fg00sgQnHw/VrzUTEc4jhZ+AN2BvQYz/tkHu4vt1kLuJyw=="
+    },
+    "lightningcss-linux-x64-gnu@1.29.1": {
+      "integrity": "sha512-u1S+xdODy/eEtjADqirA774y3jLcm8RPtYztwReEXoZKdzgsHYPl0s5V52Tst+GKzqjebkULT86XMSxejzfISw=="
+    },
+    "lightningcss-linux-x64-musl@1.29.1": {
+      "integrity": "sha512-L0Tx0DtaNUTzXv0lbGCLB/c/qEADanHbu4QdcNOXLIe1i8i22rZRpbT3gpWYsCh9aSL9zFujY/WmEXIatWvXbw=="
+    },
+    "lightningcss-win32-arm64-msvc@1.29.1": {
+      "integrity": "sha512-QoOVnkIEFfbW4xPi+dpdft/zAKmgLgsRHfJalEPYuJDOWf7cLQzYg0DEh8/sn737FaeMJxHZRc1oBreiwZCjog=="
+    },
+    "lightningcss-win32-x64-msvc@1.29.1": {
+      "integrity": "sha512-NygcbThNBe4JElP+olyTI/doBNGJvLs3bFCRPdvuCcxZCcCZ71B858IHpdm7L1btZex0FvCmM17FK98Y9MRy1Q=="
+    },
+    "lightningcss@1.29.1": {
+      "integrity": "sha512-FmGoeD4S05ewj+AkhTY+D+myDvXI6eL27FjHIjoyUkO/uw7WZD1fBVs0QxeYWa7E17CUHJaYX/RUGISCtcrG4Q==",
+      "dependencies": [
+        "detect-libc",
+        "lightningcss-darwin-arm64",
+        "lightningcss-darwin-x64",
+        "lightningcss-freebsd-x64",
+        "lightningcss-linux-arm-gnueabihf",
+        "lightningcss-linux-arm64-gnu",
+        "lightningcss-linux-arm64-musl",
+        "lightningcss-linux-x64-gnu",
+        "lightningcss-linux-x64-musl",
+        "lightningcss-win32-arm64-msvc",
+        "lightningcss-win32-x64-msvc"
       ]
     },
     "lines-and-columns@1.2.4": {
@@ -4223,8 +4349,8 @@
       "integrity": "sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==",
       "dependencies": [
         "cosmiconfig",
-        "jiti",
-        "postcss",
+        "jiti@1.21.7",
+        "postcss@8.4.35",
         "semver@7.6.0",
         "webpack"
       ]
@@ -4235,14 +4361,14 @@
     "postcss-modules-extract-imports@3.1.0_postcss@8.4.35": {
       "integrity": "sha512-k3kNe0aNFQDAZGbin48pL2VNidTF0w4/eASDsxlyspobzU3wZQLOGj7L9gfRe0Jo9/4uud09DsjFNH7winGv8Q==",
       "dependencies": [
-        "postcss"
+        "postcss@8.4.35"
       ]
     },
     "postcss-modules-local-by-default@4.2.0_postcss@8.4.35": {
       "integrity": "sha512-5kcJm/zk+GJDSfw+V/42fJ5fhjL5YbFDl8nVdXkJPLLW+Vf9mTD5Xe0wqIaDnLuL2U6cDNpTr+UQ+v2HWIBhzw==",
       "dependencies": [
         "icss-utils",
-        "postcss",
+        "postcss@8.4.35",
         "postcss-selector-parser",
         "postcss-value-parser"
       ]
@@ -4250,7 +4376,7 @@
     "postcss-modules-scope@3.2.1_postcss@8.4.35": {
       "integrity": "sha512-m9jZstCVaqGjTAuny8MdgE88scJnCiQSlSrOWcTQgM2t32UBe+MUmFSO5t7VMSfAf/FJKImAxBav8ooCHJXCJA==",
       "dependencies": [
-        "postcss",
+        "postcss@8.4.35",
         "postcss-selector-parser"
       ]
     },
@@ -4258,7 +4384,7 @@
       "integrity": "sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==",
       "dependencies": [
         "icss-utils",
-        "postcss"
+        "postcss@8.4.35"
       ]
     },
     "postcss-selector-parser@7.0.0": {
@@ -4273,6 +4399,14 @@
     },
     "postcss@8.4.35": {
       "integrity": "sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==",
+      "dependencies": [
+        "nanoid",
+        "picocolors",
+        "source-map-js"
+      ]
+    },
+    "postcss@8.5.1": {
+      "integrity": "sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==",
       "dependencies": [
         "nanoid",
         "picocolors",
@@ -4451,7 +4585,7 @@
         "adjust-sourcemap-loader",
         "convert-source-map@1.9.0",
         "loader-utils@2.0.4",
-        "postcss",
+        "postcss@8.4.35",
         "source-map@0.6.1"
       ]
     },
@@ -4944,6 +5078,9 @@
     "symbol-observable@4.0.0": {
       "integrity": "sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ=="
     },
+    "tailwindcss@4.0.0": {
+      "integrity": "sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ=="
+    },
     "tapable@2.2.1": {
       "integrity": "sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ=="
     },
@@ -5134,7 +5271,7 @@
         "esbuild@0.19.12",
         "fsevents",
         "less",
-        "postcss",
+        "postcss@8.4.35",
         "rollup",
         "sass",
         "terser@5.29.1"
@@ -5398,6 +5535,7 @@
         "npm:@angular/platform-browser-dynamic@17",
         "npm:@angular/platform-browser@17",
         "npm:@angular/router@17",
+        "npm:@tailwindcss/postcss@4",
         "npm:@tauri-apps/api@2",
         "npm:@tauri-apps/cli@2",
         "npm:@tauri-apps/plugin-opener@2",
@@ -5408,7 +5546,9 @@
         "npm:karma-jasmine-html-reporter@2.1",
         "npm:karma-jasmine@5.1",
         "npm:karma@6.4",
+        "npm:postcss@^8.5.1",
         "npm:rxjs@7.8",
+        "npm:tailwindcss@4",
         "npm:tslib@^2.3.0",
         "npm:typescript@5.4",
         "npm:zone.js@~0.14.2"

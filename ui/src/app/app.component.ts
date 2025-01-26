@@ -9,86 +9,65 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angula
   standalone: true,
   imports: [CommonModule, RouterOutlet, ReactiveFormsModule],
   template: `
-    <div class="form-container">
-      <h2>User Registration</h2>
-      <form [formGroup]="registrationForm" (submit)="onSubmit($event)">
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" formControlName="email" />
-        </div>
-        <div class="form-group">
-          <label>Password</label>
-          <input type="password" formControlName="password" />
-        </div>
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" formControlName="firstName" />
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" formControlName="lastName" />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-      <div *ngIf="data" class="response-container">
-        <h3>Response</h3>
-        <pre>{{ data | json }}</pre>
-      </div>
+<div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-6 text-center">User Registration</h2>
+  <form [formGroup]="registrationForm" (submit)="onSubmit($event)">
+    <!-- Email Input -->
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Email</label>
+      <input
+        type="email"
+        formControlName="email"
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
     </div>
-  `,
-  styles: `
-    .form-container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
 
-    h2 {
-      text-align: center;
-    }
+    <!-- Password Input -->
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
 
-    .form-group {
-      margin-bottom: 15px;
-    }
+    <!-- First Name Input -->
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">First Name</label>
+      <input
+        type="text"
+        formControlName="firstName"
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
+    <!-- Last Name Input -->
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Last Name</label>
+      <input
+        type="text"
+        formControlName="lastName"
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
 
-    input {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
+    <!-- Submit Button -->
+    <button
+      type="submit"
+      class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      Submit
+    </button>
+  </form>
 
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    .response-container {
-      margin-top: 20px;
-    }
-
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      border-radius: 4px;
-    }
-  `,
+  <!-- Response Container -->
+  <div *ngIf="data" class="mt-6 p-4 bg-gray-50 rounded-lg">
+    <h3 class="text-lg font-semibold mb-2">Response</h3>
+    <pre class="bg-white p-3 rounded-md text-sm text-gray-700">{{ data | json }}</pre>
+  </div>
+</div>
+`,
 })
 export class AppComponent {
   registrationForm: FormGroup;
