@@ -1,3 +1,3 @@
-package com.ui.app
+package com.freedev.app
 
 class MainActivity : TauriActivity()
